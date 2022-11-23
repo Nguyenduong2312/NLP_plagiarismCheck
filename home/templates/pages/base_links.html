@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/links.css' %}">
+    <title>LINKS</title>
+</head>
+
+<body>
+    <div class="hea">
+        <p style="color: antiquewhite;">Chọn web để kiểm tra độ giống nhau:</p>
+    </div>   
+    <div class="cards_links">
+        <a href="{% block link_href1 %}{% endblock %}">
+            <div class="card">
+                <div class="card_content">
+                    <div class="ten_mien">
+                        <h2 style="text-decoration: none;"> {% block ten_mien1 %} {% endblock %}</h2>
+                    </div>
+                    <div class="links">
+                        <p>{% block link1 %}{% endblock %}</p>
+                    </div>
+                </div>
+            </div>
+        </a>    
+        <a href="{% block link_href2 %}{% endblock %}">
+            <div class="card">
+                <div class="card_content">
+                    <div class="ten_mien">
+                        <h2 style="text-decoration: none;"> {% block ten_mien2 %} {% endblock %}</h2>
+                    </div>
+                    <div class="links">
+                        <p>{% block link2 %}{% endblock %}</p>
+                    </div>
+                </div>
+            </div>
+        </a>    
+        <a href="{% block link_href3 %}{% endblock %}">
+            <div class="card">
+                <div class="card_content">
+                    <div class="ten_mien">
+                        <h2 style="text-decoration: none;"> {% block ten_mien3 %} {% endblock %}</h2>
+                    </div>
+                    <div class="links">
+                        <p>{% block link3 %}{% endblock %}</p>
+                    </div>
+                </div>
+            </div>
+        </a>    
+                <a href="{% block link_href4 %}{% endblock %}">
+            <div class="card">
+                <div class="card_content">
+                    <div class="ten_mien">
+                        <h2 style="text-decoration: none;"> {% block ten_mien4 %} {% endblock %}</h2>
+                    </div>
+                    <div class="links">
+                        <p>{% block link4 %}{% endblock %}</p>
+                    </div>
+                </div>
+            </div>
+        </a>    
+        <a href="{% block link_href5 %}{% endblock %}">
+            <div class="card">
+                <div class="card_content">
+                    <div class="ten_mien">
+                        <h2 style="text-decoration: none;"> {% block ten_mien5 %} {% endblock %}</h2>
+                    </div>
+                    <div class="links">
+                        <p>{% block link5 %}{% endblock %}</p>
+                    </div>
+                </div>
+            </div>
+        </a>    
+
+    </div>
+
+</body>

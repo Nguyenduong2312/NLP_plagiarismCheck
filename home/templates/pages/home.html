@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKS</title>
+
+    <style>
+  *{
+    margin: 0px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  body{
+    margin: auto;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .layout
+  {
+      text-align: center;
+  }
+  .big_text{
+      text-align: center;
+      color:  rgb(184, 26, 144);
+      font-size: 80px;
+      font-weight: 500;
+      margin-top:100px;
+      text-shadow: 2px 2px 1px #000000; 
+ }
+  .formcontrol{
+      background-color: rgb(149, 98, 179);  
+      border-radius :5px;
+      padding: 20px;
+      font-size: 20px;
+      color:white;
+      margin-top: 20px;
+  }
+      
+  .button{
+    padding:10px 15px;
+    border-radius:10px;
+    margin: 5px;
+    background-color: rgb(243, 200, 253);
+
+  }
+      </style>
+  </head>
+
+<body>
+
+  <div class="layout">
+
+    <div class = "big_text">
+      <p>PLAGIARISM CHECK</p>
+    </div>
+
+    <div class =" box_text" >
+      <center style="padding:20px;">
+        <form style="padding:20px;border-radius: 10px;background-color: blueviolet;width:60%;margin-top:70px;" action="." method="POST">
+          {% csrf_token %}
+          {{form.as_p}}
+          <input class="button" type="submit" value="Submit"/>
+        </form>
+      </center>
+    </div>
+
+  </div>
+
+
+</body>
